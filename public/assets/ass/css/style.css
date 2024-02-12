@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #fff;
+    z-index: 100000;
+}
+
+#hero {
+    background-image: url(/assets/ass/img/bg-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 56px);
+    overflow: hidden;
+}
+
+.contant {
+    /* padding-top: 10rem; */
+    height: 100%;
+}
+
+.contant .text {
+    width: 50%;
+
+}
+
+.icon-hero {
+    position: relative;
+    width: 500px;
+    height: 100%;
+}
+
+.icon-hero img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.card {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    .contant {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    .contant .text {
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+
+    .icon-hero img {
+        width: 325px;
+        right: 105px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .contant-card {
+        flex-direction: column;
+    }
+
+    #videos iframe {
+        width: 350px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+#services {
+    background-color: #fff;
+}
+
+#packages {
+    background-color: #f7f7f9;
+}
+
+#Teachers {
+    background-color: #fff;
+}
+
+#studen {
+    background-color: red;
+}
+
+.title {
+    padding: 10px;
+    color: black;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    bottom: 0;
+    right: 0;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: orange;
+    border-radius: 50%;
+    bottom: -6px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 2;
+    animation: play 3000ms infinite;
+}
+
+@keyframes play {
+    0% {
+        right: 0;
+    }
+
+    50% {
+        right: 100%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+.icon-sc li {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    transition: 500ms;
+}
+
+.icon-sc li:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: rgb(0, 0, 0);
+}
+
+.icon-sc li:hover svg {
+    transition: 500ms;
+}
+
+.icon-sc li:hover svg {
+    transform: scale(1.2);
+}
+
+.svg-inline--fa.fa-xl {
+    vertical-align: -1rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: calc(1.5em + .75rem + 2px);
+    padding: .575rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 52px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #f9a826;
+    outline: 0;
+    box-shadow: none;
+}
+
+.border-rad {
+
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+    color: #fff;
+    background-color: #f9a826;
+    border-color: #f9a826;
+}
+
+.border-rad:hover {
+    background-color: #f9a826;
+    border-color: #f9a826;
+}
+
+.btn-20,
+.btn-20 *,
+.btn-20 :after,
+.btn-20 :before,
+.btn-20:after,
+.btn-20:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-20 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.btn-20 h5:hover {
+    color: #000;
+}
+
+.btn-20:disabled {
+    cursor: default;
+}
+
+.btn-20:-moz-focusring {
+    outline: auto;
+}
+
+.btn-20 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-20 [hidden] {
+    display: none;
+}
+
+.btn-20 {
+    border-radius: 99rem;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+}
+
+.btn-20 span {
+    mix-blend-mode: difference;
+}
+
+.btn-20:before {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    left: -100%;
+    position: absolute;
+    top: 0;
+    transform: skew(0deg) translateX(-20%);
+    transition: transform 0.2s ease;
+    width: 120%;
+}
+
+.btn-20:hover:before {
+    transform: skew(45deg) translateX(75%);
+
+}
+
+/* login */
+#login {
+    background-image: url(/assets/ass/img/bg-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 82);
+}
+
+#top-hero {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-image: url(/assets/ass/img/img-top.jpg);
+    background-size: cover;
+    object-fit: contain;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+#bottom-hero {
+    background-color: #ffffff;
+}
+
+h5.one,
+h5.two,
+h5.there,
+h5.four {
+    padding: 10px;
+    width: 175px;
+    height: 45px;
+    margin: auto;
+    background-color: #212529;
+}
+
+#ten {
+    height: 100px;
+}
+
+.shoping {
+    position: relative;
+}
+
+.shoping span {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateX(-17%);
+}
+
+a .fa-trash {
+    padding: 16px 18px;
+    font-size: 24px;
+    background-color: #e8e9ea;
+    border-radius: 50%;
+}
+
+/* Add some basic styling for the quantity container */
+.btn_min_max {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style the increment and decrement buttons */
+.quantity {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Style the disabled decrement button */
+.quantity[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.lh-condensed {
+    line-height: 1.25;
+}
+
+.hide {
+    transition: 300ms;
+    display: none;
+}
+
+.show {
+    display: block;
+}
